@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".MasterApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="코틀린 공부"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".todo.ToDoActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".todo.ToDoWriteActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".instagram.InstaChangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".instagram.InstaProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".instagram.InstaMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".instagram.InstaSplashActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".lec_youtube.YoutubeItemActivity"
+            android:exported="true" />
+        <activity
+            android:name=".lec_youtube.YoutubeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mellon.MelonDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mellon.MelonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".instagram.InstalJoinActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".instagram.InstaLoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lec_retrofit.RetorfitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".lec_retrofit.NetworkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TablayoutPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PermissionActivityTwo"
+            android:exported="true" />
+        <activity
+            android:name=".PermissionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResourceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ApplicationActivityOne"
+            android:exported="true" />
+        <activity
+            android:name=".ApplicationActivityTwo"
+            android:exported="false" />
+        <activity
+            android:name=".FagmentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
