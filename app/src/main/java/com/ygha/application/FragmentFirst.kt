@@ -20,6 +20,8 @@ class FragmentFirst : Fragment() {
         Log.d("testt","data is " + data)
     }
 
+    //ygha test git control
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
